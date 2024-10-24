@@ -16,7 +16,7 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 # `source` is obtained with Stripe.js; see https://stripe.com/docs/payments/accept-a-payment-charges#web-create-token
 
 
-# Create your views here.
+
 
 
 customer = stripe.Customer.create(
@@ -325,7 +325,7 @@ class PaymentView(View):
                     self.request, "a serious error occured . we have been notified")
                 return redirect('/')
 
-            # end of error hahah
+            # end of error 
 
 
 class homeview(ListView):
